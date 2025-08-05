@@ -216,7 +216,7 @@ const BloodDonation = () => {
   return (
     <Layout>
       {/* Hero section */}
-      <div className="bg-gradient-to-br from-mediwrap-red/10 to-mediwrap-blue/10 dark:from-mediwrap-red/5 dark:to-mediwrap-blue/5">
+      <div className="bg-gradient-to-br from-nimmaarogya-red/10 to-nimmaarogya-blue/10 dark:from-nimmaarogya-red/5 dark:to-nimmaarogya-blue/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">
@@ -259,7 +259,7 @@ const BloodDonation = () => {
               </div>
               <div className="flex items-end">
                 <Button 
-                  className="w-full bg-mediwrap-red hover:bg-mediwrap-red/90 text-white"
+                  className="w-full bg-nimmaarogya-red hover:bg-nimmaarogya-red/90 text-white"
                   onClick={handleSearch}
                 >
                   Find Donation Centers
@@ -279,7 +279,7 @@ const BloodDonation = () => {
             
             {isLoadingCenters ? (
               <div className="flex justify-center items-center h-64">
-                <Loader2 className="h-8 w-8 animate-spin text-mediwrap-blue" />
+                <Loader2 className="h-8 w-8 animate-spin text-nimmaarogya-blue" />
               </div>
             ) : donationCenters.length === 0 ? (
               <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 text-center">
@@ -288,9 +288,9 @@ const BloodDonation = () => {
             ) : (
               <div className="space-y-6">
                 {donationCenters.map((center) => (
-                  <Card key={center.id} className={`overflow-hidden border ${center.urgent ? 'border-mediwrap-red/50' : ''}`}>
+                  <Card key={center.id} className={`overflow-hidden border ${center.urgent ? 'border-nimmaarogya-red/50' : ''}`}>
                     {center.urgent && (
-                      <div className="bg-mediwrap-red text-white px-4 py-1 text-sm font-medium">
+                      <div className="bg-nimmaarogya-red text-white px-4 py-1 text-sm font-medium">
                         Urgent Need for {center.bloodNeeded?.join(", ")} Blood Types
                       </div>
                     )}
@@ -324,7 +324,7 @@ const BloodDonation = () => {
                                 key={type} 
                                 className={`px-2 py-1 rounded-full text-xs font-medium ${
                                   type === bloodType 
-                                    ? 'bg-mediwrap-red text-white' 
+                                    ? 'bg-nimmaarogya-red text-white' 
                                     : 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200'
                                 }`}
                               >
@@ -375,7 +375,7 @@ const BloodDonation = () => {
                           <Button 
                             variant="outline" 
                             size="sm"
-                            className="text-mediwrap-red"
+                            className="text-nimmaarogya-red"
                             onClick={() => handleNotifyMe(center.bloodNeeded?.[0] || 'A+')}
                             disabled={!isAuthenticated}
                           >
@@ -400,7 +400,7 @@ const BloodDonation = () => {
               <CardContent>
                 {isLoadingRequests ? (
                   <div className="flex justify-center items-center h-32">
-                    <Loader2 className="h-6 w-6 animate-spin text-mediwrap-blue" />
+                    <Loader2 className="h-6 w-6 animate-spin text-nimmaarogya-blue" />
                   </div>
                 ) : recentRequests.length === 0 ? (
                   <p className="text-gray-500 dark:text-gray-400 text-center py-4">No active blood requests</p>
@@ -415,7 +415,7 @@ const BloodDonation = () => {
                           </div>
                           <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                             request.blood_type === bloodType 
-                              ? 'bg-mediwrap-red text-white' 
+                              ? 'bg-nimmaarogya-red text-white' 
                               : 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200'
                           }`}>
                             {request.blood_type}
@@ -518,7 +518,7 @@ const BloodDonation = () => {
               <CardContent>
                 {isLoadingNeeds ? (
                   <div className="flex justify-center items-center h-32">
-                    <Loader2 className="h-6 w-6 animate-spin text-mediwrap-blue" />
+                    <Loader2 className="h-6 w-6 animate-spin text-nimmaarogya-blue" />
                   </div>
                 ) : bloodNeeds.length === 0 ? (
                   <p className="text-gray-500 dark:text-gray-400 text-center py-4">No blood needs at this time</p>
@@ -537,7 +537,7 @@ const BloodDonation = () => {
                           <div>
                             <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
                               need.blood_type === bloodType 
-                                ? 'bg-mediwrap-red text-white' 
+                                ? 'bg-nimmaarogya-red text-white' 
                                 : 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200'
                             }`}>
                               {need.blood_type}
@@ -628,7 +628,7 @@ const BloodDonation = () => {
               <CardContent>
                 {isLoadingProfile ? (
                   <div className="flex justify-center items-center h-32">
-                    <Loader2 className="h-6 w-6 animate-spin text-mediwrap-blue" />
+                    <Loader2 className="h-6 w-6 animate-spin text-nimmaarogya-blue" />
                   </div>
                 ) : isRegistered ? (
                   <div className="text-center">
@@ -654,7 +654,7 @@ const BloodDonation = () => {
                       Sign in to register as a blood donor and start saving lives
                     </p>
                     <Button 
-                      className="bg-mediwrap-blue hover:bg-mediwrap-blue-light"
+                      className="bg-nimmaarogya-blue hover:bg-nimmaarogya-blue-light"
                       onClick={() => navigate('/login')}
                     >
                       Sign In to Continue
@@ -690,7 +690,7 @@ const BloodDonation = () => {
                         id="notifications"
                         checked={donorForm.notifications_enabled}
                         onChange={(e) => setDonorForm({...donorForm, notifications_enabled: e.target.checked})}
-                        className="rounded border-gray-300 text-mediwrap-blue focus:ring-mediwrap-blue"
+                        className="rounded border-gray-300 text-nimmaarogya-blue focus:ring-nimmaarogya-blue"
                       />
                       <Label htmlFor="notifications" className="text-sm cursor-pointer">
                         Receive notifications about donation opportunities
@@ -722,7 +722,7 @@ const BloodDonation = () => {
                   </div>
                 ) : (
                   <div className="text-center py-6">
-                    <Heart className="h-12 w-12 text-mediwrap-red mx-auto mb-4" />
+                    <Heart className="h-12 w-12 text-nimmaarogya-red mx-auto mb-4" />
                     <h3 className="text-lg font-medium mb-2">Become a Blood Donor</h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
                       Join our network of donors and help save lives by donating blood

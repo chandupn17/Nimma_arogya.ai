@@ -781,7 +781,7 @@ const Admin = () => {
                   <span>User Management</span>
                   <Dialog open={isAddUserDialogOpen} onOpenChange={setIsAddUserDialogOpen}>
                     <DialogTrigger asChild>
-                      <Button className="bg-mediwrap-blue hover:bg-mediwrap-blue-light flex items-center gap-2">
+                      <Button className="bg-nimmaarogya-blue hover:bg-nimmaarogya-blue-light flex items-center gap-2">
                         <PlusCircle className="h-4 w-4" />
                         <span>Add User</span>
                       </Button>
@@ -967,7 +967,7 @@ const Admin = () => {
                       {isUsersLoading ? (
                         <TableRow>
                           <TableCell colSpan={7} className="text-center py-8">
-                            <Loader2 className="h-8 w-8 animate-spin text-mediwrap-blue mx-auto" />
+                            <Loader2 className="h-8 w-8 animate-spin text-nimmaarogya-blue mx-auto" />
                           </TableCell>
                         </TableRow>
                       ) : usersError ? (
@@ -1032,7 +1032,7 @@ const Admin = () => {
                   <span>Doctor Management</span>
                   <Dialog open={isAddDoctorDialogOpen} onOpenChange={setIsAddDoctorDialogOpen}>
                     <DialogTrigger asChild>
-                      <Button className="bg-mediwrap-blue hover:bg-mediwrap-blue-light flex items-center gap-2">
+                      <Button className="bg-nimmaarogya-blue hover:bg-nimmaarogya-blue-light flex items-center gap-2">
                         <PlusCircle className="h-4 w-4" />
                         <span>Add Doctor</span>
                       </Button>
@@ -1477,7 +1477,7 @@ const Admin = () => {
                       {isAppointmentsLoading ? (
                         <TableRow>
                           <TableCell colSpan={7} className="text-center py-8">
-                            <Loader2 className="h-8 w-8 animate-spin text-mediwrap-blue mx-auto" />
+                            <Loader2 className="h-8 w-8 animate-spin text-nimmaarogya-blue mx-auto" />
                           </TableCell>
                         </TableRow>
                       ) : appointmentsError ? (

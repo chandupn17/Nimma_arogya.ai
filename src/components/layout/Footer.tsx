@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center">
-              <span className="text-mediwrap-blue dark:text-mediwrap-blue-light font-bold text-2xl">Medi</span>
-              <span className="text-mediwrap-green dark:text-mediwrap-green-light font-bold text-2xl">Wrap</span>
+              <span className="text-nimmaarogya-blue dark:text-nimmaarogya-blue-light font-bold text-2xl">Nimma</span>
+              <span className="text-nimmaarogya-green dark:text-nimmaarogya-green-light font-bold text-2xl">Arogya</span>
             </Link>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
               Your complete healthcare management solution. Book appointments, order medicines, donate blood, and connect with a community of healthcare professionals.
@@ -31,22 +31,22 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 tracking-wider uppercase">Services</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link to="/consultation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/consultation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Doctor Consultation
                 </Link>
               </li>
               <li>
-                <Link to="/pharmacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/pharmacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Medicine Delivery
                 </Link>
               </li>
               <li>
-                <Link to="/blood-donation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/blood-donation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Blood Donation
                 </Link>
               </li>
               <li>
-                <Link to="/community" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/community" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Health Community
                 </Link>
               </li>
@@ -56,22 +56,22 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 tracking-wider uppercase">Support</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link to="/help" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/help" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Help Center
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-sm text-gray-600 dark:text-gray-400 hover:text-mediwrap-blue dark:hover:text-mediwrap-blue-light">
+                <Link to="/faq" className="text-sm text-gray-600 dark:text-gray-400 hover:text-nimmaarogya-blue dark:hover:text-nimmaarogya-blue-light">
                   FAQs
                 </Link>
               </li>
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                 <Mail className="h-4 w-4 mr-2 text-mediwrap-blue dark:text-mediwrap-blue-light" />
-                support@mediwrap.com
+                support@nimmaarogya.com
               </li>
               <li className="text-sm text-gray-600 dark:text-gray-400 mt-4">
                 123 Healthcare Avenue
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} MediWrap. All rights reserved.
+            © {new Date().getFullYear()} Nimmaarogya. All rights reserved.
           </p>
         </div>
       </div>

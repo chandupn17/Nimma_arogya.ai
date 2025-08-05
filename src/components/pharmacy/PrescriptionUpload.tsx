@@ -130,7 +130,7 @@ const PrescriptionUpload = () => {
               </p>
             </div>
             <Button 
-              className="w-full mt-4 bg-mediwrap-blue hover:bg-mediwrap-blue-light text-white"
+              className="w-full mt-4 bg-nimmaarogya-blue hover:bg-nimmaarogya-blue-light text-white"
               onClick={handleUpload}
               disabled={isUploading}
             >

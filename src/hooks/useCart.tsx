@@ -35,7 +35,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Load cart from localStorage on initial render
   useEffect(() => {
-    const storedCart = localStorage.getItem('mediwrap-cart');
+    const storedCart = localStorage.getItem('nimmaarogya-cart');
     if (storedCart) {
       try {
         const parsedCart = JSON.parse(storedCart);
@@ -44,14 +44,14 @@ export function CartProvider({ children }: { children: ReactNode }) {
         setCartItems(validatedCart);
       } catch (error) {
         console.error('Failed to parse stored cart data');
-        localStorage.removeItem('mediwrap-cart');
+        localStorage.removeItem('nimmaarogya-cart');
       }
     }
   }, []);
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('mediwrap-cart', JSON.stringify(cartItems));
+    localStorage.setItem('nimmaarogya-cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   // Add item to cart - using useCallback to prevent unnecessary re-renders
@@ -131,7 +131,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Clear cart - using useCallback to prevent unnecessary re-renders
   const clearCart = useCallback(() => {
     setCartItems([]);
-    localStorage.removeItem('mediwrap-cart');
+    localStorage.removeItem('nimmaarogya-cart');
     
     // Show toast outside of state update
     setTimeout(() => {
